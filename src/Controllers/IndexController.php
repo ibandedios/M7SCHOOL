@@ -3,14 +3,22 @@
     namespace App\Controllers;
 
     
+    use App\Controller;
     use App\Registry;
+    use App\Request;
+    use App\Session;
 
-class IndexController {
+class IndexController extends Controller{
+
+    public function __construct(Request $request, Session $session){
+        parent::__construct($request, $session);
+    }
 
         public function index()
         {
-            $users = Registry::get('database')->selectAll('users');
+            $alumnos = Registry::get('database')->selectAll('alumnos');
             
-            return view('index', compact('users'));
+            return view('index', compact('alumnos'));
+            
         }
     }

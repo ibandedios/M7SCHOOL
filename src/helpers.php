@@ -29,4 +29,5 @@
         if($_ENV['ROOT']=='/'){
             return '';
         }
+        return $_ENV['ROOT'];
     }

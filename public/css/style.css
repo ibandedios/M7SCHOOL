@@ -1,3 +1,35 @@
+*{
+    background-color: rgb(215, 215, 215); 
+}
+h1{
+    color:indigo;
+}
+form{
+    border:1px solid rgb(182, 168, 168);
+    background-color: rgb(249, 172, 209);
+}
+
+
+
+p{
+    background-color: rgb(249, 172, 209);
+}
+.button{
+    border:none;
+    cursor:pointer;
+}
+.fondoNormal{
+    background-color: rgb(215, 215, 215);
+    text-align: center;
+}
+.escuela{
+    text-align: center;
+}
+table{
+    border:1px solid black;
+    width: -webkit-fill-available;
+}
+
 body{
-    background-color: brown;
+    text-align: -webkit-center;
 }
